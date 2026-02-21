@@ -7,24 +7,34 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold text-center">Job Application Tracker</h1>
-    <div id="counter-container" class="flex justify-between items-center">
-       <div id="total-counter">
-        <h3>Total</h3>
-        <p id="total-result">0</p>
+  <body class="bg-neutral-600">
+    <section class="container mx-auto py-20">
+        <h1 class="text-3xl font-bold text-center mb-20">Job Application Tracker</h1>
+    <div id="counter-container" class="flex justify-between items-center  gap-4 ">
+       <div id="total-counter" class="w-1/3  rounded-md bg-gray-200 shadow-sm p-8">
+        <h3 class="text-3xl font-bold">Total</h3>
+        <p id="total-result" class=" font-bold text-3xl">0</p>
        </div>
 
-       <div id="interview-counter">
-        <h3>Interview </h3>
-        <p id="interview-result">0</p>
+       <div id="interview-counter" class="w-1/3  rounded-md bg-gray-200 shadow-sm p-8">
+        <h3 class="text-3xl font-bold">Interview </h3>
+        <p id="interview-result" class="text-green-500 font-bold text-3xl">0</p>
        </div>
-       <div id="rejected-counter">
-        <h3>Rejected </h3>
-        <p id="rejected-result">0</p>
+       <div id="rejected-counter" class="w-1/3  rounded-md bg-gray-200 shadow-sm p-8">
+        <h3 class="text-3xl font-bold">Rejected </h3>
+        <p id="rejected-result" class="text-red-500 font-bold text-3xl">0</p>
        </div>  
                                           
     </div>
+
+    <section id="main-container" class="my-10">
+        <div class="flex justify-between items-center">
+            <h1>Available Jobs</h1>
+            <p>Jobs</p>
+        </div>
+
+    </section>
+    </section>
 
     <script src="./script/cardData.js"></script>
     <script src="./script/common.js"></script>
