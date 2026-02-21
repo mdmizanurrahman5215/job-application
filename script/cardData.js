@@ -1,0 +1,82 @@
+const jobCards = [
+  {
+    companyName: "TechNova Solutions",
+    position: "Frontend Developer",
+    location: "Dhaka, Bangladesh",
+    type: "Full-Time",
+    salary: "৳40,000 - ৳60,000",
+    description: "We are looking for a skilled frontend developer with experience in HTML, CSS, JavaScript, and React.",
+    interview: "Interview",
+    rejected: "Rejected"
+  },
+  {
+    companyName: "Creative IT Institute",
+    position: "Junior Web Developer",
+    location: "Chittagong, Bangladesh",
+    type: "Onsite",
+    salary: "৳25,000 - ৳35,000",
+    description: "Join our team to build responsive websites and learn modern web technologies.",
+    interview: "Interview",
+    rejected: "Rejected"
+  },
+  {
+    companyName: "DataSoft Ltd.",
+    position: "Backend Developer",
+    location: "Remote",
+    type: "Remote",
+    salary: "৳50,000 - ৳80,000",
+    description: "Looking for Node.js and Express expert to develop scalable APIs and database systems.",
+    interview: "Interview",
+    rejected: "Rejected"
+  },
+  {
+    companyName: "InnovateX",
+    position: "UI/UX Designer",
+    location: "Sylhet, Bangladesh",
+    type: "Part-Time",
+    salary: "৳30,000 - ৳45,000",
+    description: "Design intuitive user interfaces and improve user experience for web and mobile apps.",
+    interview: "Interview",
+    rejected: "Rejected"
+  },
+  {
+    companyName: "NextGen Technologies",
+    position: "React Developer",
+    location: "Dhaka, Bangladesh",
+    type: "Full-Time",
+    salary: "৳60,000 - ৳90,000",
+    description: "Seeking an experienced React developer to work on enterprise-level applications.",
+    interview: "Interview",
+    rejected: "Rejected"
+  },
+  {
+    companyName: "CloudNet Systems",
+    position: "DevOps Engineer",
+    location: "Remote",
+    type: "Contract",
+    salary: "৳70,000 - ৳100,000",
+    description: "Manage CI/CD pipelines, cloud infrastructure, and server deployments.",
+    interview: "Interview",
+    rejected: "Rejected"
+  },
+  {
+    companyName: "Bright Future Ltd.",
+    position: "Software Engineer",
+    location: "Khulna, Bangladesh",
+    type: "Full-Time",
+    salary: "৳45,000 - ৳75,000",
+    description: "Develop and maintain scalable software solutions for our clients.",
+    interview: "Interview",
+    rejected: "Rejected"
+  },
+  {
+    companyName: "Digital Horizon",
+    position: "Full Stack Developer",
+    location: "Dhaka, Bangladesh",
+    type: "Hybrid",
+    salary: "৳55,000 - ৳85,000",
+    description: "Work on both frontend and backend technologies to build complete web applications.",
+    interview: "Interview",
+    rejected: "Rejected"
+  }
+];
