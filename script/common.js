@@ -1,15 +1,29 @@
 
-
-const showOnly = () => {};
-
+console.log("common.js");
 
 
-
-
-const getElementFromId = (id) => {
-   let element = document.getElementById(id);
-     
-     return element
-     
-     
+const updateInterAvailableCount = (iterview) => {
+  avaiblejob.innerText =`${ iterview.length} of 8 Jobs`
 };
+
+function calculateCount (array){
+  const length = array.length
+  console.log(length);
+  
+  totalElem.innerText = length
+
+
+}
+function calculateInterviewCount (array){
+ interviewElem.innerText = array.length
+}
+function calculateRejectCount (array){
+ rejectedElem.innerText = array.length
+}
+function availableCount (array){
+ availableJob.innerText = `${array.length} of 8 Jobs`
+}
+
+
+
+

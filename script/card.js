@@ -1,9 +1,11 @@
 
+console.log("card.js");
 
 
 const cardContainer = document.getElementById("card-container");
 
 function generateCard (jobCard) {
+ 
   cardContainer.innerHTML = "";
   
     if(jobCard.length === 0){

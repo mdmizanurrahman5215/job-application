@@ -112,3 +112,5 @@ const jobCards = [
     statusColor: "bg-gray-600 text-white",
   },
 ];
+console.log("cardData.js");
+
