@@ -1,14 +1,11 @@
-
 console.log("card.js");
-
 
 const cardContainer = document.getElementById("card-container");
 
-function generateCard (jobCard) {
- 
+function generateCard(jobCard) {
   cardContainer.innerHTML = "";
-  
-    if(jobCard.length === 0){
+
+  if (jobCard.length === 0) {
     cardContainer.innerHTML = `
       <section
           id="no-job-container"
@@ -19,18 +16,11 @@ function generateCard (jobCard) {
           <p class ="text-md md:text-2xl">Check back soon for new job opportunities</p>
         </section>
     `;
-    
-    return
-  
+
+    return;
   }
-  
-  
-  
-  
-  
-  
-  jobCard.forEach((card, index) => {
-    
+
+  jobCard.forEach((card) => {
     const {
       id,
       companyName,
@@ -42,9 +32,9 @@ function generateCard (jobCard) {
       salary,
       type,
       status,
-      statusColor
+      statusColor,
     } = card;
-    
+
     const div = document.createElement("div");
     div.innerHTML = `
      <div
@@ -65,7 +55,7 @@ function generateCard (jobCard) {
                 <p >${salary}</p>
               </div>
               <span
-                class="status text-2xl px-4 py-2 ${ statusColor} rounded-md"
+                class="status text-2xl px-4 py-2 ${statusColor} rounded-md"
                 >${status}</span
               >
               <p  class="my-6">
@@ -98,7 +88,7 @@ function generateCard (jobCard) {
 
               <button
               
-                class="card-delete-btn   w-full bg-red-500 py-2 rounded-md shadow-sm text-white font-bold text-2xl md:hidden cursor-pointer hover:bg-gray-200"
+                class="card-delete-btn   w-full bg-red-500 py-2 rounded-md shadow-sm text-white font-bold text-2xl md:hidden cursor-pointer hover:bg-red-700"
               >
                     Delete
               </button>
@@ -107,8 +97,6 @@ function generateCard (jobCard) {
           </div>
     `;
 
-    // console.log(card);
     cardContainer.appendChild(div);
   });
-};
-
+}

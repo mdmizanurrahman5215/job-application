@@ -113,5 +113,5 @@ const jobCards = [
     
   },
 ];
-console.log("cardData.js");
+
 

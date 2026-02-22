@@ -1,29 +1,18 @@
-
-console.log("common.js");
-
-
 const updateInterAvailableCount = (iterview) => {
-  avaiblejob.innerText =`${ iterview.length} of 8 Jobs`
+  avaiblejob.innerText = `${iterview.length} of 8 Jobs`;
 };
 
-function calculateCount (array){
-  const length = array.length
-  console.log(length);
-  
-  totalElem.innerText = length
+function calculateCount(array) {
+  const length = array.length;
 
-
+  totalElem.innerText = length;
 }
-function calculateInterviewCount (array){
- interviewElem.innerText = array.length
+function calculateInterviewCount(array) {
+  interviewElem.innerText = array.length;
 }
-function calculateRejectCount (array){
- rejectedElem.innerText = array.length
+function calculateRejectCount(array) {
+  rejectedElem.innerText = array.length;
 }
-function availableCount (array){
- availableJob.innerText = `${array.length} of 8 Jobs`
+function availableCount(array) {
+  availableJob.innerText = `${array.length} of 8 Jobs`;
 }
-
-
-
-

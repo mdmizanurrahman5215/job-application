@@ -1,17 +1,9 @@
-console.log("toogle.js");
-
 const allBtn = document.getElementById("all-filter-btn");
 const interviewBtn = document.getElementById("interview-filter-btn");
 const rejectedBtn = document.getElementById("rejected-filter-btn");
 
-function toogle(id, interviewFilterArray) {
-  console.log(id);
-  console.log(interviewFilterArray);
-  
-
+function toogle(id) {
   const selected = document.getElementById(id);
-
-  //   console.log(selected);
 
   allBtn.classList.remove("selected");
   interviewBtn.classList.remove("selected");
@@ -33,5 +25,3 @@ function toogle(id, interviewFilterArray) {
     availableCount(rejectedCards);
   }
 }
-
-

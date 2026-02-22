@@ -3,20 +3,16 @@ function selectHandler(e) {
   const isRejectedBtnClicked = e.target.closest(".rejected-btn");
   const isDeletedBtnClicked = e.target.closest(".card-delete-btn");
 
- 
-
   if (!isInterviewClicked && !isRejectedBtnClicked && !isDeletedBtnClicked) {
     return;
   }
-  console.log(e.target);
-  //   console.log(isInterviewClicked.innerText);
+
   console.log(isRejectedBtnClicked);
   console.log(isDeletedBtnClicked);
   const card = e.target.closest(".card");
   const cardId = card.dataset.id;
 
   const selectedCard = cards.find((card) => card.id == cardId);
-  console.log(selectedCard);
 
   //   interview select
 
@@ -43,7 +39,6 @@ function selectHandler(e) {
     calculateInterviewCount(interviewCards);
 
     const matchedIndex = rejectedCards.findIndex((card) => card.id == cardId);
-    console.log(matchedIndex);
 
     if (matchedIndex !== -1) {
       rejectedCards.splice(matchedIndex, 1);
@@ -53,9 +48,8 @@ function selectHandler(e) {
     if (matchedIndex !== -1) {
       const filtered = rejectedCards.filter((card) => card.id !== cardId);
       console.log(filtered);
-      generateCard(filtered)
-      avaiblejob(filtered)
-        
+      generateCard(filtered);
+      avaiblejob(filtered);
     }
   }
 
@@ -83,7 +77,6 @@ function selectHandler(e) {
     if (!exist) {
       rejectedCards.push(selectedCard);
       calculateRejectCount(rejectedCards);
-      console.log(rejectedCards);
     }
     const matchedIndex = interviewCards.findIndex((card) => card.id == cardId);
 
@@ -91,19 +84,40 @@ function selectHandler(e) {
       interviewCards.splice(matchedIndex, 1);
       calculateInterviewCount(interviewCards);
     }
-   if (matchedIndex !== -1) {
+    if (matchedIndex !== -1) {
       const filtered = interviewCards.filter((card) => card.id !== cardId);
-      console.log(filtered);
-      generateCard(filtered)
-      avaiblejob(filtered)
-        
+      generateCard(filtered);
+      avaiblejob(filtered);
     }
   }
 
-//   delete section 
-if(isDeletedBtnClicked){
-   console.log("delete button clicked");
-   
-}
-  
+  //   delete section
+  if (isDeletedBtnClicked) {
+    const allMatched = cards.findIndex((card) => card.id == cardId);
+    const interviewMatched = interviewCards.findIndex(
+      (card) => card.id == cardId,
+    );
+    const rejectedMatched = rejectedCards.findIndex(
+      (card) => card.id == cardId,
+    );
+
+    if (allMatched !== -1) {
+      cards.splice(allMatched, 1);
+      generateCard(cards);
+      calculateCount(cards);
+      availableCount(cards);
+    }
+    if (interviewMatched !== -1) {
+      interviewCards.splice(interviewMatched, 1);
+      generateCard(interviewCards);
+      calculateInterviewCount(interviewCards);
+      availableCount(interviewCards);
+    }
+    if (rejectedMatched !== -1) {
+      rejectedCards.splice(rejectedMatched, 1);
+      generateCard(rejectedCards);
+      calculateRejectCount(rejectedCards);
+      availableCount(rejectedCards);
+    }
+  }
 }
