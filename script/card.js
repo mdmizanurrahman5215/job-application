@@ -12,9 +12,9 @@ function generateCard (jobCard) {
           id="no-job-container"
           class="bg-white flex flex-col justify-center items-center gap-4 w-full h-[400px] rounded-md"
         >
-          <img src="./images/assignment.png" alt="" />
+          <img src="./images/assignment.png" alt="assignment" />
           <h1 class ="text-2xl my-2 ">No Jobs Available</h1>
-          <p class ="text-2xl">Check back soon for new job opportunities</p>
+          <p class ="text-md md:text-2xl">Check back soon for new job opportunities</p>
         </section>
     `;
     
@@ -47,7 +47,7 @@ function generateCard (jobCard) {
     div.innerHTML = `
      <div
             data-id="${id}"
-            class="card bg-white px-6 py-10 rounded-md shadow-sm flex justify-between"
+            class="card bg-white px-6 py-10 rounded-md shadow-sm flex flex-col md:flex-row md:justify-between gap-6"
           >
             <!-- right  -->
             <div  class=" ">
@@ -86,13 +86,21 @@ function generateCard (jobCard) {
             </div>
 
             <!-- left  -->
-            <div >
+            <div class="">
               <button
               
-                class="card-delete-btn w-[50px] h-[50px] flex justify-center items-center border-2 border-gray-300 rounded-full p-2  cursor-pointer hover:bg-gray-200"
+                class="card-delete-btn hidden md:block w-[50px] h-[50px] flex justify-center items-center border-2 border-gray-300 rounded-full p-2  cursor-pointer hover:bg-gray-200"
               >
                 <img src="../images/Trash.png" alt="" class="w-full" />
               </button>
+
+              <button
+              
+                class="card-delete-btn   w-full bg-red-500 py-2 rounded-md shadow-sm text-white font-bold text-2xl md:hidden cursor-pointer hover:bg-gray-200"
+              >
+                    Delete
+              </button>
+
             </div>
           </div>
     `;
