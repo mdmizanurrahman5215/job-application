@@ -19,7 +19,7 @@ const availableJob = document.getElementById("available-job")
 const cardContainerElem = document.getElementById("card-container")
 console.log(cardContainerElem);
 
-cardContainerElem.addEventListener("click",selectHandler() )
+cardContainerElem.addEventListener("click", selectHandler)
 
 
 
