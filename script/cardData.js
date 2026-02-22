@@ -1,5 +1,6 @@
 const jobCards = [
   {
+    id:1,
     companyName: "TechNova Solutions",
     position: "Frontend Developer",
     location: "Dhaka, Bangladesh",
@@ -7,9 +8,11 @@ const jobCards = [
     salary: "৳40,000 - ৳60,000",
     description: "We are looking for a skilled frontend developer with experience in HTML, CSS, JavaScript, and React.",
     interview: "Interview",
-    rejected: "Rejected"
+    rejected: "Rejected",
+     status: "Not Applied",
   },
   {
+    id:2,
     companyName: "Creative IT Institute",
     position: "Junior Web Developer",
     location: "Chittagong, Bangladesh",
@@ -17,9 +20,11 @@ const jobCards = [
     salary: "৳25,000 - ৳35,000",
     description: "Join our team to build responsive websites and learn modern web technologies.",
     interview: "Interview",
-    rejected: "Rejected"
+    rejected: "Rejected",
+     status: "Not Applied",
   },
   {
+    id:3,
     companyName: "DataSoft Ltd.",
     position: "Backend Developer",
     location: "Remote",
@@ -27,9 +32,11 @@ const jobCards = [
     salary: "৳50,000 - ৳80,000",
     description: "Looking for Node.js and Express expert to develop scalable APIs and database systems.",
     interview: "Interview",
-    rejected: "Rejected"
+    rejected: "Rejected",
+     status: "Not Applied",
   },
   {
+    id:4,
     companyName: "InnovateX",
     position: "UI/UX Designer",
     location: "Sylhet, Bangladesh",
@@ -37,9 +44,11 @@ const jobCards = [
     salary: "৳30,000 - ৳45,000",
     description: "Design intuitive user interfaces and improve user experience for web and mobile apps.",
     interview: "Interview",
-    rejected: "Rejected"
+    rejected: "Rejected",
+     status: "Not Applied",
   },
   {
+    id:5,
     companyName: "NextGen Technologies",
     position: "React Developer",
     location: "Dhaka, Bangladesh",
@@ -47,9 +56,11 @@ const jobCards = [
     salary: "৳60,000 - ৳90,000",
     description: "Seeking an experienced React developer to work on enterprise-level applications.",
     interview: "Interview",
-    rejected: "Rejected"
+    rejected: "Rejected",
+     status: "Not Applied",
   },
   {
+    id:6,
     companyName: "CloudNet Systems",
     position: "DevOps Engineer",
     location: "Remote",
@@ -57,9 +68,11 @@ const jobCards = [
     salary: "৳70,000 - ৳100,000",
     description: "Manage CI/CD pipelines, cloud infrastructure, and server deployments.",
     interview: "Interview",
-    rejected: "Rejected"
+    rejected: "Rejected",
+     status: "Not Applied",
   },
   {
+    id:7,
     companyName: "Bright Future Ltd.",
     position: "Software Engineer",
     location: "Khulna, Bangladesh",
@@ -67,9 +80,11 @@ const jobCards = [
     salary: "৳45,000 - ৳75,000",
     description: "Develop and maintain scalable software solutions for our clients.",
     interview: "Interview",
-    rejected: "Rejected"
+    rejected: "Rejected",
+     status: "Not Applied",
   },
   {
+    id:8,
     companyName: "Digital Horizon",
     position: "Full Stack Developer",
     location: "Dhaka, Bangladesh",
@@ -77,6 +92,7 @@ const jobCards = [
     salary: "৳55,000 - ৳85,000",
     description: "Work on both frontend and backend technologies to build complete web applications.",
     interview: "Interview",
-    rejected: "Rejected"
+    rejected: "Rejected",
+     status: "Not Applied",
   }
 ];
